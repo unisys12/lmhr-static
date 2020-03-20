@@ -1,0 +1,22 @@
+{
+  "name": "lmhr-static",
+  "version": "0.0.1",
+  "description": "Static site for Lead Me Home Rescue",
+  "main": "index.js",
+  "scripts": {
+    "dev": "npx eleventy --serve"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/unisys12/lmhr-static.git"
+  },
+  "author": "unisys12",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/unisys12/lmhr-static/issues"
+  },
+  "homepage": "https://github.com/unisys12/lmhr-static#readme",
+  "devDependencies": {
+    "@11ty/eleventy": "^0.10.0"
+  }
+}
