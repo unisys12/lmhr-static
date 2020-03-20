@@ -7,8 +7,9 @@ body {
   margin-bottom: 1em;
 }
 
-.container p {
+.wrapper p {
   font-family: var(--content-font);
+  letter-spacing: 0.025em;
 }
 
 .wrapper {
