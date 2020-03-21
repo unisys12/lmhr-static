@@ -286,7 +286,17 @@ footer .links a {
 .payment-card {
   display: grid;
   grid-template-rows: 50px 1fr 50px;
-  font-family: var(--primary-font);
   box-shadow: 1px 0 2px rgba(0, 0, 0, 0.8), 2px 0 3px rgba(255, 255, 255, 0.9);
   place-items: center;
+  transition: box-shadow ease-in-out 0.3s;
+}
+
+.payment-card:hover {
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0.8), 1px 0 2px rgba(255, 255, 255, 0.9);
+}
+
+.payment-card > a {
+  text-decoration: none;
+  font-family: var(--primary-font);
+  color: #333333;
 }
