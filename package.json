@@ -1,10 +1,10 @@
 {
   "name": "lmhr-static",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Static site for Lead Me Home Rescue",
   "main": "index.js",
   "scripts": {
-    "dev": "npx eleventy --serve"
+    "dev": "npx @11ty/eleventy --serve"
   },
   "repository": {
     "type": "git",
