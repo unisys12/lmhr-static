@@ -1,7 +1,5 @@
 :root {
-  --primary-font: "Montserrat", Arial, Helvetica, sans-serif;
-  --header-font: "Lato", Arial, Helvetica, sans-serif;
-  --content-font: "Lato", Arial, Helvetica, sans-serif;
-  --link-font: "Agency FB Bold", Arial, Helvetica, sans-serif;
-  --logo-font: "MyriadPro-BoldCond", Arial, Helvetica, sans-serif;
+  --header-font: "Rubik", Arial, sans-serif;
+  --content-font: "Ubuntu", Arial, Helvetica, sans-serif;
+  --link-font: "Montserrat", Arial, Helvetica, sans-serif;
 }

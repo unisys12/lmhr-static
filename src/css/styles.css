@@ -7,9 +7,12 @@ body {
   margin-bottom: 1em;
 }
 
+p {
+  font-family: var(--content-font);
+}
+
 .wrapper p {
   font-family: var(--content-font);
-  letter-spacing: 0.025em;
 }
 
 .wrapper {
@@ -26,7 +29,7 @@ body {
 
 .site-header h1 {
   line-height: 1rem;
-  font-family: var(--logo-font);
+  font-family: var(--header-font);
 }
 
 .site-header a {
@@ -34,6 +37,7 @@ body {
   text-decoration: none;
   font-family: var(--link-font);
   font-size: 1.5em;
+  font-weight: bold;
 }
 
 .site-nav a:hover {
@@ -73,7 +77,8 @@ body {
 
 .action-header {
   align-self: center;
-  font-family: var(--content-font);
+  font-family: var(--header-font);
+  font-weight: 300;
   letter-spacing: 0.085em;
   margin-left: 1em;
 }
@@ -96,7 +101,7 @@ body {
   margin-left: 2em;
   transition: box-shadow 0.5s ease-in-out;
   text-decoration: none;
-  font-family: var(--primary-font);
+  font-family: var(--link-font);
 }
 
 .adoption-btn:hover {
@@ -116,12 +121,12 @@ body {
 
 .kennel-head,
 .page-head {
-  font-family: var(--content-font);
-  font-weight: 700;
+  font-family: var(--header-font);
+  /* font-weight: 700; */
 }
 
 .card {
-  font-family: var(--primary-font);
+  font-family: var(--link-font);
   letter-spacing: 0.085em;
 }
 
@@ -158,7 +163,7 @@ body {
 
 .attr-list {
   list-style: none;
-  font-family: var(--primary-font);
+  font-family: var(--link-font);
 }
 
 .attr-list li {
@@ -189,6 +194,10 @@ footer {
   font-family: var(--content-font);
   letter-spacing: 0.085em;
   place-items: center;
+}
+
+.contact h3 {
+  font-family: var(--header-font);
 }
 
 footer .links {
@@ -297,6 +306,6 @@ footer .links a {
 
 .payment-card > a {
   text-decoration: none;
-  font-family: var(--primary-font);
+  font-family: var(--link-font);
   color: #333333;
 }
