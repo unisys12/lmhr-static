@@ -190,9 +190,8 @@ p {
 
 footer {
   display: grid;
-  grid-template-columns: repeat(3, minmax(150px, 1fr));
+  grid-template-columns: repeat(2, minmax(150px, 1fr));
   font-family: var(--content-font);
-  letter-spacing: 0.085em;
   place-items: center;
 }
 
@@ -211,14 +210,14 @@ footer .links a {
   color: #1b1b1b;
 }
 
-.contact li {
-  list-style-type: none;
+.contact {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  place-items: center;
 }
 
-.doobert_img {
-  display: grid;
-  grid-template-columns: 1fr;
-  grid-template-rows: 1fr;
+.contact li {
+  list-style-type: none;
 }
 
 .page-content {
