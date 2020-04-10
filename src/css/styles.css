@@ -1,5 +1,10 @@
 body {
   background-color: rgba(0, 0, 0, 0.041);
+  height: 100%;
+}
+
+main {
+  margin-bottom: 2em;
 }
 
 .container {
