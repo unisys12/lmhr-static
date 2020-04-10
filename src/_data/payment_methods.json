@@ -1,0 +1,22 @@
+[
+    {
+        "name": "PayPal",
+        "link": "https://Paypal.me/AmberAustin7",
+        "logo": "https://res.cloudinary.com/dtm8qhbwk/image/upload/c_thumb,q_auto,w_150/v1581512359/paypal-logo-preview_fbsps4.png"
+    },
+    {
+        "name": "Cash App",
+        "link": "https://cash.app/$leadmehomerescue",
+        "logo": "https://res.cloudinary.com/dtm8qhbwk/image/upload/c_thumb,q_auto,w_150/v1581512343/Cash-App-Dollar-Icon_svycpe.png"
+    },
+    {
+        "name": "Venmo",
+        "link": "https://venmo.com/AmberAustin-Leadmehomerescue",
+        "logo": "https://res.cloudinary.com/dtm8qhbwk/image/upload/c_thumb,q_auto,w_225/v1581512340/venmo-logo_rjjveb.png"
+    },
+    {
+        "name": "Apple Pay",
+        "link": "https://support.apple.com/en-us/HT207875",
+        "logo": "https://res.cloudinary.com/dtm8qhbwk/image/upload/c_thumb,q_auto,w_150/v1581597239/Apple-Pay-logo-vector-01_kwwbqx.png"
+    }
+]

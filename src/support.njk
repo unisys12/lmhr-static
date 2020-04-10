@@ -7,28 +7,12 @@ title: "Support LMHR"
     Ways to Support Us
 </h2>
 <section class="support-grid">
+    {% for method in payment_methods %}
     <article class="payment-card">
-        <a href="http://Paypal.me/AmberAustin7"><h3>PayPal</h3></a>
+        <a href={{ method.link }}><h3>{{ method.name }}</h3></a>
         <figure class="payment-logo">
-            <img src="https://res.cloudinary.com/dtm8qhbwk/image/upload/v1581512359/paypal-logo-preview_fbsps4.png" height="auto" width="150px" alt="paypal logo">
+            <img src={{ method.logo }} alt="make a payment or donation through {{ method.name }}">
         </figure>
     </article>
-    <article class="payment-card">
-        <a href="https://cash.app/$leadmehomerescue"><h3>Cash App</h3></a>
-        <figure class="payment-logo">
-            <img src="https://res.cloudinary.com/dtm8qhbwk/image/upload/v1581512343/Cash-App-Dollar-Icon_svycpe.png" height="auto" width="150px" alt="cash app logo">
-        </figure>
-    </article>
-    <article class="payment-card">
-        <a href="https://venmo.com/AmberAustin-Leadmehomerescue"><h3>Venmo</h3></a>
-        <figure class="payment-logo">
-            <img src="https://res.cloudinary.com/dtm8qhbwk/image/upload/v1581597010/venmo-icon_l5wpmj.svg" height="auto" width="150px" alt="Venmo logo">
-        </figure>
-    </article>
-    <article class="payment-card">
-        <a href="https://support.apple.com/en-us/HT207875"><h3>Apple Pay</h3></a>
-        <figure class="payment-logo">
-            <img src="https://res.cloudinary.com/dtm8qhbwk/image/upload/v1581597239/Apple-Pay-logo-vector-01_kwwbqx.svg" height="auto" width="150px" alt="Apple Pay logo">
-        </figure>
-    </article>
+    {% endfor %}
 </section>
