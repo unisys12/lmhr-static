@@ -4,7 +4,7 @@ title: LMHR Application
 ---
 
 <div class="adopt-form">
-    <form method="post" id="app-form" data-netlify="true">
+    <form name="adoption-application" id="app-form" action="/thanks/" netlify>
         <fieldset>
             <legend>Contact Info</legend>
             <div class="form-group">
@@ -36,29 +36,29 @@ title: LMHR Application
                 <input type="text" name="contact_window" id="contact_window" placeholder="3pm - 7pm Monday Wednesday Friday" required>
             </div>
         </fieldset>
-        <fieldset>
+        {# <fieldset>
             <legend>Work Info</legend>
             <div class="form-group" id="employment">
                 <label for="employment_status">Employment Status </label>
                 <select name="employment_status" id="employment_status" required>
-                    <option value=""></option>
-                    <option value="full">Full Time</option>
-                    <option value="part">Part Time</option>
-                    <option value="unemployed">Unemployed</option>
-                    <option value="retired">Retired</option>
+                    <option value="0"></option>
+                    <option value="1">Full Time</option>
+                    <option value="2">Part Time</option>
+                    <option value="3">Unemployed</option>
+                    <option value="4">Retired</option>
                 </select>
             </div>
             <div class="form-group" id="employed">
                 <label for="occupation">Occupation </label>
-                <input type="text" name="occupation" class="work_option">
+                <input type="text" name="occupation" class="work_option" disabled>
             </div>
             <div class="form-group" id="employed">
                 <label for="employeer_name">Name of Employeer </label>
-                <input type="text" name="employeer_name" class="work_option">
+                <input type="text" name="employeer_name" class="work_option" disabled>
             </div>
             <div class="form-group" id="employed">
                 <label for="work_schedule">Typical Work Schedule</label>
-                <input type="text" name="work_schedule" class="work_option" placeholder="M-F 8am-5pm or MWF 9am-1pm TT 1pm-5pm">
+                <input type="text" name="work_schedule" class="work_option" placeholder="M-F 8am-5pm or MWF 9am-1pm TT 1pm-5pm" disabled>
             </div>
         </fieldset>
         <fieldset>
@@ -73,10 +73,10 @@ title: LMHR Application
             </div>
             <div class="form-group">
                 <label for="landlord_name">Landlord Name</label>
-                <input type="text" name="landlord_name" class="landlord">
+                <input type="text" name="landlord_name" class="landlord" disabled>
 
                 <label for="landlord_phone">Landlord Phone Number</label>
-                <input type="tel" name="landlord_phone" class="landlord" id="landlord_phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" placeholder="xxx-xxx-xxxx">
+                <input type="tel" name="landlord_phone" class="landlord" id="landlord_phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" placeholder="xxx-xxx-xxxx" disabled>
             </div>
             <div class="form-group">
                 <label for="fence_desc">Is your yard fenced?</label>
@@ -121,7 +121,7 @@ title: LMHR Application
             </div>
         </fieldset>
         <fieldset>
-            <legend>Current & Past Pets</legend>
+            <legend>Current &#38; Past Pets</legend>
             <div class='form-group'>
                 <label for='pet_members'>Do you currently have any other pets?</label>
                 <input type='text' name='pet_members' id='pet_members' placeholder="If yes, please list name, species, gender, and age of each pet.">
@@ -162,27 +162,28 @@ title: LMHR Application
             </div>
             <div class='form-group'>
                 <label for='vet_name'>Veterinarian Name</label>
-                <input type='text' class="vet_details" name="vet_name" id="vet_name">
+                <input type='text' class="vet_details" name="vet_name" id="vet_name" disabled>
             </div>
             <div class='form-group'>
                 <label for='vet_number'>Veterinarain Phone Number</label>
-                <input type="tel" class="vet_details" name="vet_number" id="vet_number" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" placeholder="xxx-xxx-xxxx">
+                <input type="tel" class="vet_details" name="vet_number" id="vet_number" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" placeholder="xxx-xxx-xxxx" disabled> 
             </div>
             <div class='form-group'>
                 <label for='vet_city'>City</label>
-                <input type='text' class="vet_details" name="vet_city" id="vet_city">
+                <input type='text' class="vet_details" name="vet_city" id="vet_city" disabled>
             </div>
             <div class='form-group'>
                 <label for='vet_state'>State</label>
-                <input type='text' class="vet_details" name="vet_state" id="vet_state">
+                <input type='text' class="vet_details" name="vet_state" id="vet_state" disabled>
             </div>
-        </fieldset>
+        </fieldset> #}
         <fieldset>
             <legend>Puppy I'm Interest In</legend>
             <label for="puppy_name">Puppy</label>
             <input type="text" name="puppy_name" value="">
         </fieldset>
-        <p>By submitting this application, I affirm that ALL information is true
+        <div class="form-group form_agree">
+            <p>By submitting this application, I affirm that ALL information is true
             and complete and that no one in the household where the pet will
             reside has ever been convicted of animal cruelty or abuse. I agree to
             give permission for a representative of LMHR to call the references
@@ -191,11 +192,6 @@ title: LMHR Application
             applying for. I understand that if any of the information provided in
             this application or throughout the adoption process is found to have
             been falsified, my deposit will not be refunded.</p>
-        <div class="form-group form_agree">
-            <label for="agree">
-                By checking the checkbox below, I agree to the above terms.
-            </label>
-            <input type="checkbox" name="agree" id="agree">
         </div>
         <div class="form-group">
             <input type="submit" name="appSubmit" value="Submit App" class="adoption-btn">
