@@ -20,6 +20,18 @@ title: LMHR Application
                 <input type="text" name="address" id="address" required>
             </div>
             <div class="form-group">
+                <label for="city">City </label>
+                <input type="text" name="city" id="city" required>
+            </div>
+            <div class="form-group">
+                <label for="state">State </label>
+                <input type="text" name="state" id="state" required>
+            </div>
+            <div class="form-group">
+                <label for="zip">Zip </label>
+                <input type="text" name="zip" id="zip" pattern="[0-9]{1}[0-9]{1}[0-9]{1}[0-9]{1}[0-9]{1}" required>
+            </div>
+            <div class="form-group">
                 <label for="cell_number">Cell Number </label>
                 <input type="tel" name="cell" id="cell" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" placeholder="xxx-xxx-xxxx" required>
             </div>
