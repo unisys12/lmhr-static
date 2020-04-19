@@ -12,7 +12,7 @@ vetSelector.addEventListener("change", e => {
 
   console.log(`Fire change event for Vet Selector`);
 
-  if (vet_assoc == "1") {
+  if (vet_assoc == "yes") {
     vetInputs.forEach(v => v.removeAttribute('disabled'));
   } else {
     vetInputs.forEach(v => v.setAttribute('disabled', ''));
@@ -23,23 +23,15 @@ workElement.addEventListener("change", e => {
   let workStatus = e.target.value;
 
   switch (workStatus) {
-    case "1":
+    case "full-time":
       workInput.forEach(w => w.removeAttribute('disabled'));
       break;
 
-    case "2":
+    case "part-time":
       workInput.forEach(w => w.removeAttribute('disabled'));
-      break;
-
-    case "3":
-      workInput.forEach(w => w.setAttribute('disabled', ''));
-      break;
-
-    case "4":
-      workInput.forEach(w => w.setAttribute('disabled', ''));
       break;
   
-    default:
+    default: workInput.forEach(w => w.setAttribute('disabled', ''));
       break;
   }
 });
@@ -47,7 +39,9 @@ workElement.addEventListener("change", e => {
 landLordSelector.addEventListener("change", e => {
   let own = e.target.value;
 
-  if (own == "2") {
+  if (own == "rent") {
     landlord.forEach(l => l.removeAttribute('disabled'));
-  } 
+  } else {
+    landlord.forEach(l => l.setAttribute('disabled', ''));
+  }
 });
