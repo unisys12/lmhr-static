@@ -6,6 +6,11 @@ title: LMHR Application
 <div class="adopt-form">
     <form name="adoption-application" id="app-form" action="/thanks/" netlify>
         <fieldset>
+            <legend>Puppy I'm Interest In</legend>
+            <label for="puppy_name">Puppy</label>
+            <input type="text" name="puppy_name" value="">
+        </fieldset>
+        <fieldset>
             <legend>Contact Info</legend>
             <div class="form-group">
                 <label for="name">Name</label>
@@ -65,8 +70,8 @@ title: LMHR Application
                 <input type="text" name="occupation" class="work_option" disabled>
             </div>
             <div class="form-group" id="employed">
-                <label for="employeer_name">Name of Employeer </label>
-                <input type="text" name="employeer_name" class="work_option" disabled>
+                <label for="employer_name">Name of Employer </label>
+                <input type="text" name="employer_name" class="work_option" disabled>
             </div>
             <div class="form-group" id="employed">
                 <label for="work_schedule">Typical Work Schedule</label>
@@ -188,11 +193,6 @@ title: LMHR Application
                 <label for='vet_state'>State</label>
                 <input type='text' class="vet_details" name="vet_state" id="vet_state" disabled>
             </div>
-        </fieldset>
-        <fieldset>
-            <legend>Puppy I'm Interest In</legend>
-            <label for="puppy_name">Puppy</label>
-            <input type="text" name="puppy_name" value="">
         </fieldset>
         <div class="form-group form_agree">
             <p>By submitting this application, I affirm that ALL information is true
