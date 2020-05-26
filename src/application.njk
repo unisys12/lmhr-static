@@ -8,7 +8,7 @@ title: LMHR Application
         <fieldset>
             <legend>Puppy I'm Interest In</legend>
             <label for="puppy_name">Puppy</label>
-            <input type="text" name="puppy_name" value="">
+            <input type="text" name="puppy_name" value="" required>
         </fieldset>
         <fieldset>
             <legend>Contact Info</legend>
@@ -83,6 +83,7 @@ title: LMHR Application
         </fieldset>
         <fieldset>
             <legend>Home Environment</legend>
+            <sub><i>Please send recent photos of your yard to leadmehomerescue@gmail.com. Add your name and the name of the dog you are wanting to adobt to the subject line.</i></sub>
             <div class="form-group">
                 <label for="own_or_rent">Do you own or rent your home?</label>
                 <select name="own_or_rent" id="own_or_rent" required>
@@ -195,6 +196,26 @@ title: LMHR Application
             <div class='form-group'>
                 <label for='vet_state'>State</label>
                 <input type='text' class="vet_details" name="vet_state" id="vet_state" disabled>
+            </div>
+        </fieldset>
+        <fieldset>
+            <legend>Personal References</legend>
+            <sub><i>Please list two personal references</i></sub>
+            <div class="form-group">
+                <label>Name</label>
+                <input type="text" name="reference_one_name">
+                <label>Number</label>
+                <input type="text" name="reference_one_number">
+                <label>Relationship</label>
+                <input type="text" name="reference_one_relationship">
+            </div>
+            <div class="form-group">
+                <label>Name</label>
+                <input type="text" name="reference_two_name">
+                <label>Number</label>
+                <input type="text" name="reference_two_number">
+                <label>Relationship</label>
+                <input type="text" name="reference_two_relationship">
             </div>
         </fieldset>
         <div class="form-group form_agree">
